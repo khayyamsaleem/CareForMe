@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import shortid from 'shortid';
 import { withRouter } from 'react-router-dom';
 import styles from './LoginRegisterPage.module.css';
 import img from '../../images/logo_transparent.png';
@@ -49,7 +48,7 @@ const LoginRegisterPage = ({ history }) => {
 					<div className={styles.roleButtonContainer}>
 						{['User', 'Doctor'].map(role => (
 							<button
-								key={shortid.generate()}
+								key={role}
 								className={`${styles.roleButton} ${usertype === role ? styles.selectedUserType : ''}`}
 								onClick={() => setUserType(role)}
 							>

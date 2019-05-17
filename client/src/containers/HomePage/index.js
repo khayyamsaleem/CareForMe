@@ -4,7 +4,7 @@ import { HomePageNavBar } from '../../components';
 const HomePage = () => (
 	<div>
 		<HomePageNavBar />
-		HomePage!
+		HomePage
 	</div>
 );
 
