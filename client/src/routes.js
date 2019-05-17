@@ -1,4 +1,3 @@
-import React from 'react';
 import { HomePage, LoginRegisterPage } from './containers';
 
 export default [
@@ -12,4 +11,9 @@ export default [
 		exact: true,
 		component: LoginRegisterPage,
 	},
+	{
+		path: '/register',
+		exact: true,
+		component: LoginRegisterPage
+	}
 ];
